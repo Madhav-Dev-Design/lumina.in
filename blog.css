@@ -11,7 +11,7 @@ body {
 }
 
 .background {
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/Eduford/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Eduford/background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
