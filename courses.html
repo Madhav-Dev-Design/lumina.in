@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Eduford/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body">
+    <section class="background">
+        <nav>
+            <img src="/Eduford/logo.png">
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="eduford.html" target="_self">HOME</li>
+                    <li><a href="about.html" target="_self">ABOUT</a></li>
+                    <li><a href="courses.html" target="_self">COURSES</a></li>
+                    <li><a href="blog.html" target="_self">BLOG</a></li>
+                    <li><a href="contact.html" target="_self">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>  
+        </nav>
+        <div class="about-h1">
+        <h1>Our Courses</h1>
+    </div>
+    </section>
+    <!-------------------------------------Platform--------------------------------- -->
+    <section class="platform">
+        <div class="container">
+                <div class="article">
+                    <img class="card-image"src="/Eduford/graduate.avif">
+                    <div class="card-data">
+                        <h2>Postgraduate Programs</h2>
+                        <p>For decades, Eduford College has improved the health of our communities, one graduate at a time. The JoAnn McGrath School of Nursing and Health Professions, as one of the largest nursing schools</p>
+                    </div>
+                    <div class="info">
+                        POSTGRADUATE
+                    </div>
+                </div>
+                <div class="article">
+                    <img class="card-image"src="/Eduford/ug1.jpg">
+                    <div class="card-data">
+                        <h2>Undergraduate Programs</h2>
+                        <p>Building on our strong roots in leadership, health care and education, Eduford is proud to offer an array of coed graduate programs for women and men who are ready to advance their careers</p>
+                    </div>
+                    <div class="info">
+                        UNDERGRADUATE
+                    </div>
+                </div>
+                <div class="article">
+                    <img class="card-image" src="/Eduford/pg.jpg">
+                    <div class="card-data">
+                        <h2>Diploma</h2>
+                        <p>The Eduford, as one of the largest nursing schools in Wisconsin, offers a wide array of fully accredited nursing programs, guaranteed clinical placements and a technology</p>
+                    </div>
+                    <div class="info">
+                        DIPLOMA
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- ==========================================Facilities======================================= -->
+     <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to pay when we review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted here, you belong here.</p>
+        <div class="facility-container">
+            <div class="card-1">
+                <div class="photo">
+                    <img src="/Eduford/lib.jpg">
+                </div>
+                <div class="content-box">
+                <h2>Library</h2>
+                <p>Our college has a historic inn offering cozy accommodations and a welcoming atmosphere for all visitors Historically, taverns have been important community centers, providing lodging, entertainment, and a venue for social and political gatherings.</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="photo">
+                    <img src="/Eduford/bar.jpg">
+                </div>
+                <div class="content-box">
+                <h2>Tavern</h2>
+                <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to pay when we review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted here, you belong here.</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="photo">
+                    <img src="/Eduford/basketball.webp">
+                </div>
+                <div class="content-box">
+                <h2>Hoops Court</h2>
+                <p>Our college boasts a state-of-the-art hoops court, providing an ideal space for basketball enthusiasts to practice and play. The court features high-quality flooring, professional-grade hoops, and ample seating for spectators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------Footer-------------------------------------- -->
+    <section class="about">
+        <h1>About Us</h1>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p class="name">Made by <a href="https://www.linkedin.com/in/madhav-siva-kumar-63774924b/">Maddy's Bro</a></p>
+    </section>
+     <!-- -----------------------------Toggle------------------------------ -->
+    <script>
+        var navLinks =document.getElementById("navlinks")
+        function openMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-300px";
+        }
+    </script>
+</body>
+</html>

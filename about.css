@@ -1,0 +1,251 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
+.background
+{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Eduford/background.jpg);
+    width: 100%;
+    min-height: 60vh;
+    background-position:50% 120%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.background img
+{
+    width: 150px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.text-box h2
+{
+  font-family: arial;
+  text-align: center;
+  font-weight: 600;
+  margin:10px 0;  
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    font-family:"Playwrite NG Modern",arial,'Times New Roman', Times, serif;
+    font-size: 10px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:rgba(255, 0, 0, 0.995) ;
+    display: block;
+    transition: 0.55s;
+    margin: auto;
+} 
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+nav .fa
+{
+    display: none;
+}
+@media(max-width:900px)
+{
+     .background
+{
+    min-height: 40vh;
+}
+    .nav-links
+    {
+    position: absolute;
+    background-color: rgb(233, 39, 21);
+    top: 0;
+    right:-1000px;
+    height: 100vh;
+    width: 30vh;
+    z-index: 100;
+    text-align: center;
+    padding-top: 20px;
+    transition: 1s;
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    nav .fa
+    {
+    display: block;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 15px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:rgba(255, 215, 0, 1) ;
+    display: block;
+    transition: 0.55s;
+    margin: auto;
+} 
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+}
+@media(max-width:1000px)
+{
+.text-box h2
+{
+    font-family: arial;
+    font-size: 30px;
+    text-align: left;
+    margin-top:2px;
+    margin:auto;
+    transform: translatex(20px);
+    transform: translatey(-50px);
+}
+.text-box p
+{
+    color: gray;
+    font-family: arial;
+    padding-right: 30px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: justify;
+    margin:auto;
+    transform: translatex(20px);
+    transform: translatey(-50px);
+}
+.container
+{
+    flex-direction: column;
+}
+.a-image
+{
+    display: block;
+    height: 250px;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Images/Eduford/background.jpg);
+    width: 100%;
+    min-height: 10vh;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 10px;
+}
+}
+.about-h1
+{
+    font-family: arial;
+    color:white;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 90px;
+}
+.platform
+{
+    width: 80%;
+    margin: auto;
+}
+.container
+{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.a-image
+{
+    display: block;
+    height: 250px;
+}
+.text-box h1
+{
+    font-family: arial;
+    font-size: 40px;
+    padding-right:22px;
+    line-height:40px;
+    flex:1;
+}
+.text-box p
+{
+    margin-top: 20px;
+    color: gray;
+    font-family: arial;
+    padding-right: 30px;
+    line-height: 25px;
+}
+.platform button
+{
+    margin-top: 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: blue;
+    color:blue;
+    padding: 18px 50px;
+    cursor: pointer;
+    transition:background-color, 1s ;
+    transition:padding, 1s ;
+    transition:font-size, 1s ;
+    border-radius: 5px;
+    font-size: 10px;
+    display: block;
+}
+.platform button:hover
+{
+    background-color: blue;
+    border-style: solid;
+    border-color: blue;
+    padding: 22px 48px;
+    font-size:12px ;
+    color: white;
+}
+.about
+{
+    padding-top: 110px;
+    width: 90%;
+    font-family: arial;
+    margin: auto;
+    text-align: center;
+}
+.about p
+{
+    color: gray;
+    padding-top: 60px;
+    font-family: arial;
+    padding-bottom: 50px;
+}
+.name
+{
+    font-size: 15px;
+    padding-bottom: 5px;
+} 

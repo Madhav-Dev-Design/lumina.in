@@ -1,0 +1,400 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
+.background
+{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Eduford/background.jpg);
+    width: 100%;
+    min-height: 60vh;
+    background-position:50% 120%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.background img
+{
+    width: 150px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    font-family:"Playwrite NG Modern",arial,'Times New Roman', Times, serif;
+    font-size: 10px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:rgba(255, 0, 0, 0.995) ;
+    display: block;
+    transition: 0.55s;
+    margin: auto;
+} 
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+nav .fa
+{
+    display: none;
+}
+@media(max-width:900px)
+{
+    .nav-links
+    {
+    position: absolute;
+    background-color: rgb(233, 39, 21);
+    top: 0;
+    right:-1000px;
+    height: 100vh;
+    width: 30vh;
+    z-index: 100;
+    text-align: center;
+    padding-top: 20px;
+    transition: 1s;
+    position: fixed;
+    text-decoration: none;
+    color: white;
+    }
+    .nav-links ul li
+    {
+        display: block;
+    }
+    nav .fa
+    {
+    display: block;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 15px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width:0%;
+    height: 2px;
+    background-color:rgba(255, 215, 0, 1) ;
+    display: block;
+    transition: 0.55s;
+    margin: auto;
+} 
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+}
+.about-h1
+{
+    font-family: arial;
+    color:white;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 90px;
+}
+.about
+{
+    padding-top: 110px;
+    width: 90%;
+    font-family: arial;
+    margin: auto;
+    text-align: center;
+}
+.about p,.we-offer p,.facilities p
+{
+    color: gray;
+    padding-top: 30px;
+    font-family: arial;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-top: 2px;
+}
+.name
+{
+    font-size: 15px;
+    padding-bottom: 5px;
+} 
+.container
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(max-width:900px)
+{
+    .we-offer h1
+    {
+        font-size: 28px;
+    }
+    .container,.facility-container
+    {
+        flex-direction: column;
+    }
+    .article img
+    {
+        height: 240px;
+    }
+    .article
+    {
+        margin-bottom:30px;
+    }
+    .card-1:not(:last-child)
+    {
+        margin-bottom:100px;
+    }
+    .background
+    {
+        min-height:40vh;
+    }
+    .card-data
+    {
+    width: 280px;
+    padding:3rem 2rem;
+    box-shadow:0 8px 24px hsla(0,0%,0%,.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom:-5rem;
+    left:0;
+    background-color:white;
+    right:0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 0.55s ,bottom 0.55s;
+}
+}
+.container
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.article
+{
+    position: relative;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card-image
+{
+    height:300px;
+    width:80%;
+    border-radius:10px;
+    margin-bottom: 0;
+}
+.platform
+{
+    width:90%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info
+{
+    width:80%  ;
+    text-align: center;
+    background-color: transparent;
+    color: crimson;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: crimson;
+    border-radius: 5px;
+    margin: auto;
+    height: 30px;
+    margin-top: 0;
+    font-family: arial;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-weight: bold;
+    transition: opacity 0.55;
+}
+.card-data
+{
+    width: 280px;
+    padding:3rem 2rem;
+    box-shadow:0 8px 24px hsla(0,0%,0%,.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom:-2rem;
+    left:0;
+    background-color:white;
+    right:0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 0.55s ,bottom 0.55s;
+}
+.card-data h2
+{
+    font-family: arial;
+    margin-bottom: 15px;
+}
+.card-data p
+{
+    color: gray;
+    font-family: arial;
+    font-size: 14px;
+}
+.article:hover
+{
+    .card-data
+    {
+    bottom:5rem; 
+    opacity: 1;
+    }
+    .info
+    {
+        opacity: 0;
+    }
+}
+/* ====================FACILITY===================================== */
+.facilities
+{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.facility-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+.card-1
+{
+    flex:1;
+    position: relative;
+    border-style: none;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-1:hover
+{
+    .content-box
+    {
+    opacity: 1;
+    padding-top: 180px;
+    padding-bottom: 2px;
+    }
+    .photo
+    {
+        top:-60px;
+        height:200px;
+        margin-bottom: 10px;
+    }
+}
+.content-box
+{
+    position: relative;
+    opacity: 0;
+    padding-bottom: 20px;
+    transition: opacity 0.55s,padding-top 0.9s;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom:60px;
+}
+.content-box p
+{
+    margin-top: 2px;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%; 
+    height: 250px; 
+    position: absolute;
+    top: -40px;
+    transition: top 1s,height 1s;
+    z-index: 100;
+    margin-top: 25px;
+}
+
+.photo img {
+    width: auto; 
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:900px)
+{
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%; 
+    height: 200px; 
+    position: absolute;
+    top: -40px;
+    transition: top 1s,height 1s;
+    z-index: 100;
+    margin-top: 15px;
+}
+.content-box
+{
+    position: relative;
+    opacity: 0;
+    padding-bottom:2px;
+    transition: opacity 0.55s,padding-top 0.9s;
+    padding-left: 10px;
+    padding-right:10px;
+}
+.card-1:hover
+{
+    .content-box
+    {
+    opacity: 1;
+    padding-top:60px;
+    padding-bottom: 2px;
+    }
+    .photo
+    {
+        top:-60px;
+        height: 100px;
+    }
+    .content-box p
+    {
+        font-size: 12px;
+    }
+}
+}

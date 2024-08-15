@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playwrite NG Modern', Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #ffffff;
+}
+
+.background {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(/Eduford/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background img {
+    width: 150px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.about-h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #f4c542;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #f4c542;
+    display: block;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .background {
+        height: 40vh;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        width: 30vh;
+        background-color: rgb(233, 39, 21);
+        z-index: 100;
+        text-align: center;
+        padding-top: 20px;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}
+
+.about {
+    padding: 60px 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.about p {
+    color: #888;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.name {
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #888;
+}
+
+.split {
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    align-items: start;
+}
+
+.program h1 {
+    text-align: left;
+    color: #333;
+    font-size: 2rem;
+}
+
+.program p {
+    text-align: left;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.forms {
+    margin-top: 5vh;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.forms h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.forms input, .forms textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.forms button {
+    background-color: #f4c542;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forms button:hover {
+    background-color: #e5b738;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .program {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+}
