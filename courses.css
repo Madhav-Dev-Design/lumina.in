@@ -5,7 +5,7 @@
 }
 .background
 {
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Eduford/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Eduford/background.jpg);
     width: 100%;
     min-height: 60vh;
     background-position:50% 120%;
